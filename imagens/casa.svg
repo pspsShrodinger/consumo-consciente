@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 510" fill="none">
+  <path fill="#E5F0D5" d="M31 387V252C31 118 140 38 294 38c135 0 279 73 279 210v139c0 44-31 72-70 72H102c-43 0-71-26-71-72Z"/>
+  <circle cx="457" cy="107" r="34" fill="#F7CD72"/>
+  <path d="M457 56v-8m0 118v-8m-51-51h-8m118 0h-8m-87-36-6-6m84 84-6-6m0-72 6-6" stroke="#C78137" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M126 130h70c-3-9-11-13-19-12-4-10-13-15-23-11-5 2-8 6-10 11-10-2-16 3-18 12Zm184-26h53c-2-6-8-10-15-9-3-8-11-11-17-8-4 2-6 5-7 8-7-1-12 3-14 9Z" fill="#FAFCF5"/>
+  <path d="M475 170c13-7 23-1 28 6 6-6 14-10 25-4" stroke="#548169" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M32 410c57-25 121-25 188-22 67 3 126-24 194-23 68 0 114 19 158 41-7 34-35 53-69 53H102c-34 0-60-16-70-49Z" fill="#D5E7BB"/>
+  <path d="M255 433h255" stroke="#A8C48B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M224 391c58 0 101 4 152 4 98 0 139 6 139 18 0 11-71 19-151 19-92 0-160-5-160-17 0-9 9-17 20-24Z" fill="#C2D9A1"/>
+  <!-- A casa e seu telhado solar -->
+  <path d="M277 246h201v154H277z" fill="#FCFAEA"/>
+  <path d="m408 211 70 38v151h-72z" fill="#F1E9CA"/>
+  <path d="M274 397h209v10H274z" fill="#477059"/>
+  <path d="M441 170h22v64h-22z" fill="#EC9E74"/>
+  <path d="M438 166h29v10h-29z" fill="#C96F54"/>
+  <path d="m243 268 76-111h99l74 111H243Z" fill="#3B684D"/>
+  <path d="m418 157 74 111H382l-63-111z" fill="#29543F"/>
+  <path d="M243 268h249v13H243z" fill="#194634"/>
+  <path d="m326 179 57 83h-108l56-83H326Z" fill="#567D50"/>
+  <path d="m294 248 35-51 36 51z" fill="#F0E4B9"/>
+  <circle cx="330" cy="228" r="7" fill="#749F79"/>
+  <path d="M389 177h-40l48 70h64l-47-70z" fill="#8BBDA8" stroke="#E2F1DD" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m375 177 47 70m-25-70 48 70m-79-47h64m-48 23h63" stroke="#E2F1DD" stroke-width="2"/>
+  <rect x="293" y="300" width="48" height="45" rx="4" fill="#A6CDB3" stroke="#477059" stroke-width="3"/>
+  <path d="M317 301v43m-23-21h46" stroke="#477059" stroke-width="2.5"/>
+  <path d="M358 400v-71a24 24 0 0 1 48 0v71z" fill="#D88160"/>
+  <path d="M368 400v-69a14 14 0 0 1 28 0v69" stroke="#A75C46" stroke-width="2"/>
+  <circle cx="391" cy="366" r="2.8" fill="#FFF1C6"/>
+  <rect x="424" y="300" width="36" height="42" rx="4" fill="#A6CDB3" stroke="#477059" stroke-width="3"/>
+  <path d="M442 301v40m-17-20h34" stroke="#477059" stroke-width="2.5"/>
+  <path d="M359 406h45l22 39h-94z" fill="#F1E9CA"/>
+  <path d="M353 417h58m-65 10h70m-76 10h81" stroke="#DFD0A6" stroke-width="2"/>
+  <path d="M494 390v-70m0 38 15-25m-15 11-16-16" stroke="#4B7754" stroke-width="4" stroke-linecap="round"/>
+  <path d="M495 334c-18-12-17-34-1-49 14 12 19 34 1 49Z" fill="#77A166"/>
+  <path d="M504 347c-1-18 13-28 29-26-1 16-12 30-29 26Zm-16 3c-18 1-30-11-31-29 16 0 30 10 31 29Z" fill="#65935B"/>
+  <path d="M483 377h24l-4 27h-16z" fill="#DE9671"/>
+  <!-- Mulher com uma prancheta -->
+  <ellipse cx="171" cy="445" rx="93" ry="11" fill="#B9D19A"/>
+  <path d="M128 190c-9-8-14-21-11-38 4-30 26-50 54-49 29 0 48 20 51 45 2 14-4 28 0 40 3 10 11 16 12 26-29 13-80 13-108-6 1-5 2-12 2-18Z" fill="#243A32"/>
+  <path d="M150 329h65l-4 53-6 55h-25l-6-80-9 81h-25l-7-83z" fill="#37654E"/>
+  <path d="m174 355 7 81m-37-62 4 49" stroke="#244B39" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="m140 431 24 1 4 15h-44v-5c0-6 7-9 16-11Zm40 1h25l12 8c3 2 4 5 3 7h-40z" fill="#233D31"/>
+  <path d="M166 199c-27 0-45 14-51 41l-6 39 25 7 2 47c23 11 56 9 84-1l-3-78 19 12 22-24-21-20-19-11c-13-8-24-12-37-12z" fill="#7BAA66"/>
+  <path d="m210 247 6 25m-78-22-3 40" stroke="#527C4D" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="m241 232 12-18 10-21c2-3 6-3 7 0l-4 16 10-6c4-2 7 2 4 5l-15 17-10 23z" fill="#AE6E51"/>
+  <path d="M160 180h23l3 23c-5 11-24 15-31 1z" fill="#AE6E51"/>
+  <path d="M137 144c4-16 21-30 42-26 21 4 30 23 25 47-2 14-8 27-19 32-13 6-32-2-41-16-7 1-13-4-14-10-2-6 1-12 7-12z" fill="#BF8060"/>
+  <path d="M132 161c-6-30 13-50 39-50 20 0 33 13 38 27-15 1-29-4-38-12-6 13-17 20-30 24l2 13z" fill="#243A32"/>
+  <path d="M159 155c3-3 8-3 11-1m12 0c4-2 8-2 11 1" stroke="#3B332B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M164 160h.2m24 0h.2" stroke="#333029" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="m178 162 3 8h-4m-6 7c4 4 10 4 14 0" stroke="#824D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="142" cy="176" r="3.4" fill="#F9CC6E"/>
+  <path d="M111 276c-1 13 5 28 16 30l31-2-1-14-22-3-3-9z" fill="#AE6E51"/>
+  <rect x="149" y="237" width="61" height="82" rx="7" transform="rotate(9 149 237)" fill="#315E46"/>
+  <rect x="153" y="243" width="52" height="71" rx="3" transform="rotate(9 153 243)" fill="#FFFCEE"/>
+  <path d="m168 245 1-6 21 4-1 6z" fill="#ECAF68"/>
+  <path d="m178 264-12 16h9l-4 13 14-18h-9z" fill="#7BAA66"/>
+  <path d="M130 291h17l5-4c3-2 9 0 8 3l-3 8-9 5-17 3z" fill="#BF8060"/>
+  <path d="M49 394v-27m0 13c-2-12-11-18-22-17 3 10 10 17 22 17Zm0-6c2-13 12-21 23-20-1 12-11 20-23 20Zm489 34v-21m0 10c2-10 9-14 16-16-1 8-6 15-16 16Z" stroke="#759D65" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M83 205v20m-10-10h20m453 24v16m-8-8h16m-227 37v12m-6-6h12" stroke="#B3CD94" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

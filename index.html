@@ -1,1 +1,284 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Entenda o consumo elétrico de casa, compare aparelhos e simule seus gastos com energia.">
+  <meta name="theme-color" content="#f6f8ef">
+  <title>Consumo Consciente | Energia no dia a dia</title>
+  <link rel="icon" href="imagens/marca.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container topbar">
+      <a class="brand" href="#inicio">
+        <img src="imagens/marca.svg" alt="" width="38" height="38">
+        <span>Consumo Consciente</span>
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="menu" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        Menu
+      </button>
+      <nav id="menu" aria-label="Navegação principal">
+        <a href="#aprender">Aprender</a>
+        <a href="#comparar">Comparar</a>
+        <a href="#simular">Simular</a>
+        <a href="#economizar">Economizar</a>
+        <a class="nav-evaluate" href="#avaliar">Avaliar</a>
+      </nav>
+    </div>
+  </header>
 
+  <main id="inicio" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Atividade Extensionista IV · ODS 12.8</p>
+          <h1 id="hero-title">Consumo <em>Consciente</em></h1>
+          <p class="hero-lead">Sua energia vale mais quando você sabe como utilizá-la.</p>
+          <p class="hero-description">Entenda quanto seus aparelhos gastam, simule o consumo de casa e descubra o que você pode economizar no dia a dia.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#simular">Simular meu consumo</a>
+            <a class="button secondary" href="#aprender">Entender o consumo</a>
+          </div>
+        </div>
+        <img class="hero-art" src="imagens/casa.svg" alt="Mulher com prancheta ao lado de uma casa com painéis solares e plantas" width="610" height="510">
+      </div>
+    </section>
+
+    <section class="section" id="aprender" aria-labelledby="aprender-title">
+      <div class="container">
+        <div class="learn-layout">
+          <img class="learn-art" src="imagens/lampada.svg" alt="" width="410" height="344" loading="lazy">
+          <div>
+            <p class="eyebrow"><span></span> Aprender</p>
+            <h2 id="aprender-title">Como a energia vira gasto?</h2>
+            <p class="section-lead">Quanto maior a potência de um aparelho e o tempo de uso, maior tende a ser o consumo. Na conta de luz, esse consumo aparece em kWh.</p>
+            <div class="unit-grid">
+              <article class="unit-card"><h3>W</h3><p>Watt mede a potência elétrica de um aparelho.</p></article>
+              <article class="unit-card"><h3>kW</h3><p>Quilowatt também mede potência. <strong>1 kW equivale a 1.000 W.</strong></p></article>
+              <article class="unit-card"><h3>kWh</h3><p>Quilowatt-hora mede a energia consumida ao longo do tempo.</p></article>
+            </div>
+          </div>
+        </div>
+
+        <div class="learn-followup">
+          <div class="habit-note">
+            <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="10"/><path d="M14 8v6l4 2"/></svg>
+            <div>
+              <h3>O tempo de uso faz diferença</h3>
+              <p>Um chuveiro de 5.500 W ligado por 10 minutos consome cerca de 0,92 kWh. Um roteador de 10 W ligado dia e noite consome 0,24 kWh por dia. Vale observar a potência e por quanto tempo cada aparelho fica ligado.</p>
+            </div>
+          </div>
+          <details class="formula">
+            <summary>Quer entender o cálculo?</summary>
+            <div class="formula-content">
+              <p class="equation">Consumo (kWh) = potência (W) × tempo (h) ÷ 1.000</p>
+              <p>Uma lâmpada de 10 W acesa por 5 horas consome 0,05 kWh. Com a tarifa de exemplo de R$ 1,00 por kWh, isso custa R$ 0,05.</p>
+              <p>Para converter minutos em horas, divida por 60. Para estimar o custo, multiplique o consumo pela tarifa.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="comparar" aria-labelledby="comparar-title">
+      <div class="container">
+        <div class="section-intro compare-intro">
+          <div>
+            <p class="eyebrow"><span></span> Comparar</p>
+            <h2 id="comparar-title">Quanto custa utilizar seus aparelhos?</h2>
+            <p class="section-lead" id="table-help">Cada linha mostra um exemplo de uso diário para um aparelho. A estimativa de 30 dias repete esse mesmo uso todos os dias.</p>
+          </div>
+          <img src="imagens/aparelhos.svg" alt="" width="416" height="252" loading="lazy">
+        </div>
+        <p class="scroll-hint" aria-hidden="true">Deslize a tabela para ver todas as colunas.</p>
+        <div class="table-wrap" role="region" aria-label="Tabela comparativa de aparelhos" tabindex="0">
+          <table aria-describedby="table-help reference-note">
+            <caption>Exemplos com a tarifa fixa de R$ 1,00 por kWh</caption>
+            <thead>
+              <tr><th scope="col">Aparelho</th><th scope="col">Potência</th><th scope="col">Uso por dia</th><th scope="col">kWh por dia</th><th scope="col">Custo por dia</th><th scope="col">kWh em 30 dias</th><th scope="col">Custo em 30 dias</th></tr>
+            </thead>
+            <tbody id="aparelhos">
+              <tr data-id="chuveiro" data-watts="5500" data-minutes="30"><th scope="row">Chuveiro elétrico</th><td>5.500 W</td><td>30 min</td><td>2,75</td><td>R$&nbsp;2,75</td><td>82,5</td><td>R$&nbsp;82,50</td></tr>
+              <tr data-id="ventilador" data-watts="60" data-minutes="480"><th scope="row">Ventilador</th><td>60 W</td><td>8 h</td><td>0,48</td><td>R$&nbsp;0,48</td><td>14,4</td><td>R$&nbsp;14,40</td></tr>
+              <tr data-id="led" data-watts="9" data-minutes="300"><th scope="row">Lâmpada LED</th><td>9 W</td><td>5 h</td><td>0,045</td><td>R$&nbsp;0,05</td><td>1,35</td><td>R$&nbsp;1,35</td></tr>
+              <tr data-id="incandescente" data-watts="60" data-minutes="300"><th scope="row">Lâmpada incandescente</th><td>60 W</td><td>5 h</td><td>0,3</td><td>R$&nbsp;0,30</td><td>9</td><td>R$&nbsp;9,00</td></tr>
+              <tr data-id="tv" data-watts="100" data-minutes="240"><th scope="row">TV LED</th><td>100 W</td><td>4 h</td><td>0,4</td><td>R$&nbsp;0,40</td><td>12</td><td>R$&nbsp;12,00</td></tr>
+              <tr data-id="notebook" data-watts="65" data-minutes="360"><th scope="row">Notebook</th><td>65 W</td><td>6 h</td><td>0,39</td><td>R$&nbsp;0,39</td><td>11,7</td><td>R$&nbsp;11,70</td></tr>
+              <tr data-id="roteador" data-watts="10" data-minutes="1440"><th scope="row">Roteador</th><td>10 W</td><td>24 h</td><td>0,24</td><td>R$&nbsp;0,24</td><td>7,2</td><td>R$&nbsp;7,20</td></tr>
+              <tr data-id="ar" data-watts="650" data-minutes="480" data-variable><th scope="row">Ar-condicionado</th><td>650 W <span class="average">médios</span></td><td>8 h</td><td>5,2</td><td>R$&nbsp;5,20</td><td>156</td><td>R$&nbsp;156,00</td></tr>
+              <tr data-id="geladeira" data-watts="55" data-minutes="1440" data-variable><th scope="row">Geladeira</th><td>55 W <span class="average">médios</span></td><td>24 h</td><td>1,32</td><td>R$&nbsp;1,32</td><td>39,6</td><td>R$&nbsp;39,60</td></tr>
+              <tr data-id="carregador" data-watts="5" data-minutes="60"><th scope="row">Carregador de celular</th><td>5 W</td><td>1 h</td><td>0,005</td><td>&lt; R$ 0,01</td><td>0,15</td><td>R$&nbsp;0,15</td></tr>
+              <tr data-id="standby" data-watts="2" data-minutes="1200"><th scope="row">TV em espera</th><td>2 W</td><td>20 h</td><td>0,04</td><td>R$&nbsp;0,04</td><td>1,2</td><td>R$&nbsp;1,20</td></tr>
+              <tr data-id="computador" data-watts="150" data-minutes="360"><th scope="row">Computador de mesa</th><td>150 W</td><td>6 h</td><td>0,9</td><td>R$&nbsp;0,90</td><td>27</td><td>R$&nbsp;27,00</td></tr>
+              <tr data-id="monitor" data-watts="25" data-minutes="360"><th scope="row">Monitor</th><td>25 W</td><td>6 h</td><td>0,15</td><td>R$&nbsp;0,15</td><td>4,5</td><td>R$&nbsp;4,50</td></tr>
+              <tr data-id="freezer" data-watts="45" data-minutes="1440" data-variable><th scope="row">Freezer</th><td>45 W <span class="average">médios</span></td><td>24 h</td><td>1,08</td><td>R$&nbsp;1,08</td><td>32,4</td><td>R$&nbsp;32,40</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="fineprint" id="reference-note">As potências são referências ilustrativas. Geladeira, freezer e ar-condicionado variam de potência durante o uso. Para esses aparelhos, usamos uma potência média apenas para ilustrar o consumo. O valor real depende do equipamento e dos hábitos, e a conta pode incluir outros encargos. Os custos em 30 dias usam o consumo antes do arredondamento.</p>
+      </div>
+    </section>
+
+    <section class="section" id="simular" aria-labelledby="simular-title">
+      <div class="container">
+        <div class="section-intro simulate-intro">
+          <div>
+            <p class="eyebrow"><span></span> Simular</p>
+            <h2 id="simular-title">Descubra quanto sua casa pode gastar</h2>
+            <p class="section-lead">Experimente com um aparelho ou some vários em <strong>Minha conta</strong> para descobrir quais pesam mais no consumo.</p>
+          </div>
+          <p class="rate"><strong>R$ 1,00</strong><span>por kWh · tarifa de exemplo</span></p>
+        </div>
+
+        <noscript><p class="fineprint">Ative o JavaScript do navegador para usar o simulador.</p></noscript>
+        <div id="simulator" class="simulator" hidden>
+          <div class="tabs" role="tablist" aria-label="Modo de simulação">
+            <button type="button" id="tab-single" role="tab" aria-selected="true" aria-controls="single-panel">Um aparelho</button>
+            <button type="button" id="tab-account" role="tab" aria-selected="false" aria-controls="account-panel" tabindex="-1">Minha conta</button>
+          </div>
+
+          <div id="single-panel" class="sim-grid" role="tabpanel" aria-labelledby="tab-single">
+            <div class="sim-controls">
+              <label for="single-device">Aparelho</label>
+              <select id="single-device"></select>
+              <p class="field-note" id="single-power"></p>
+
+              <div class="range-heading">
+                <label for="single-slider">Tempo de uso por dia</label>
+                <output for="single-slider single-minutes" id="single-time"></output>
+              </div>
+              <input type="range" id="single-slider" min="0" max="1440" step="1" value="30">
+              <div class="range-scale" aria-hidden="true"><span>0 h</span><span>12 h</span><span>24 h</span></div>
+              <label for="single-minutes" class="minutes-label">Ajuste em minutos</label>
+              <input type="number" id="single-minutes" min="0" max="1440" step="1" value="30" inputmode="numeric">
+            </div>
+            <div class="result-card">
+              <h3>Estimativa para um aparelho</h3>
+              <div id="single-result" class="results" aria-live="polite" aria-atomic="true">
+                <div><span>Por dia</span><strong id="single-day-price"></strong><small id="single-day-energy"></small></div>
+                <div><span>Em 30 dias</span><strong id="single-month-price"></strong><small id="single-month-energy"></small></div>
+              </div>
+              <p>Considera o mesmo tempo de uso a cada dia.</p>
+            </div>
+          </div>
+
+          <div id="account-panel" class="account-panel" role="tabpanel" aria-labelledby="tab-account" hidden>
+            <div class="sim-grid">
+              <form id="account-form" class="sim-controls">
+                <label for="account-device">Aparelho</label>
+                <select id="account-device"></select>
+                <p class="field-note" id="account-power"></p>
+
+                <div class="account-fields">
+                  <div><label for="account-quantity">Quantidade</label><input type="number" id="account-quantity" min="1" max="999" step="1" value="1" inputmode="numeric" required></div>
+                  <fieldset>
+                    <legend>Uso diário por unidade</legend>
+                    <div class="time-fields">
+                      <div><label for="account-hours">Horas</label><input type="number" id="account-hours" min="0" max="24" step="1" value="0" inputmode="numeric" required></div>
+                      <div><label for="account-minutes">Minutos</label><input type="number" id="account-minutes" min="0" max="59" step="1" value="30" inputmode="numeric" required></div>
+                    </div>
+                  </fieldset>
+                </div>
+                <p class="field-error" id="account-error" role="alert" hidden></p>
+                <div class="form-actions">
+                  <button class="button primary" type="submit" id="save-device">Adicionar aparelho</button>
+                  <button class="button secondary" type="button" id="cancel-edit" hidden>Cancelar</button>
+                </div>
+              </form>
+
+              <div class="result-card">
+                <h3>Estimativa de Minha conta</h3>
+                <div id="account-result" class="results" aria-live="polite" aria-atomic="true">
+                  <div><span>Por dia</span><strong id="account-day-price"></strong><small id="account-day-energy"></small></div>
+                  <div><span>Em 30 dias</span><strong id="account-month-price"></strong><small id="account-month-energy"></small></div>
+                </div>
+                <p>Inclui os aparelhos que você adicionou abaixo.</p>
+              </div>
+            </div>
+
+            <div class="account-breakdown">
+              <div>
+                <h3>Aparelhos adicionados</h3>
+                <p id="account-empty">Adicione um aparelho para começar sua conta.</p>
+                <ul id="account-list" class="account-list"></ul>
+                <p class="sr-only" role="status" id="account-status"></p>
+              </div>
+              <div>
+                <h3>Participação no consumo</h3>
+                <p id="chart-empty">O gráfico aparece ao adicionar um aparelho.</p>
+                <ol id="account-chart" class="account-chart" aria-label="Percentual do consumo por tipo de aparelho"></ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="fineprint">Esta simulação é educativa. Aparelhos de consumo variável usam a potência média ilustrativa da tabela. Os valores da sua conta de luz podem ser diferentes.</p>
+      </div>
+    </section>
+
+    <section class="section tinted" id="economizar" aria-labelledby="economizar-title">
+      <div class="container">
+        <p class="eyebrow"><span></span> Economizar</p>
+        <h2 id="economizar-title">Economize energia, economize dinheiro</h2>
+        <p class="section-lead">Veja quanto três mudanças simples podem poupar em 30 dias com a tarifa de exemplo.</p>
+        <div class="tips-grid">
+          <article class="tip-card">
+            <div class="tip-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 20v-4a9 9 0 0 1 18 0m-9 7h21m-20 0a10 10 0 0 1 20 0m-17 6-2 4m9-4v4m7-4 2 4m-20 5-1 2m12-2v2m11-2 1 2"/></svg></div>
+            <h3>Encurte o banho</h3>
+            <p>Use o chuveiro de 5.500 W cinco minutos a menos por dia.</p>
+            <p class="saving">Cerca de <strong>R$ 14</strong> por mês</p>
+          </article>
+          <article class="tip-card">
+            <div class="tip-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 34v-4a12 12 0 1 1 12 0v4m-12 0h12m-11 5h10m-8 4h6M6 18h4m28 0h4M11 6l3 3m23-3-3 3"/><path d="m24 15-4 7h7l-3 6"/></svg></div>
+            <h3>Troque uma lâmpada por LED</h3>
+            <p>Substitua uma incandescente de 60 W por uma LED de 9 W, com 5 horas de uso por dia.</p>
+            <p class="saving">Cerca de <strong>R$ 8</strong> por mês</p>
+          </article>
+          <article class="tip-card">
+            <div class="tip-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="9" width="36" height="24" rx="3"/><path d="M15 40h18m-9-7v7m0-25v6m-4-3a6 6 0 1 0 8 0"/></svg></div>
+            <h3>Desligue a TV da tomada</h3>
+            <p>Se a TV fica 20 horas por dia no modo de espera a 2 W, tire-a da tomada durante esse período.</p>
+            <p class="saving">Cerca de <strong>R$ 1</strong> por mês</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section evaluation" id="avaliar" aria-labelledby="avaliar-title">
+      <div class="container evaluation-card">
+        <div>
+          <p class="eyebrow"><span></span> Avaliar</p>
+          <h2 id="avaliar-title">O site ajudou você?</h2>
+          <p>Conte o que ficou claro e o que podemos melhorar no site.</p>
+          <p class="form-status" id="form-status">O formulário de avaliação estará disponível em breve.</p>
+          <a class="button primary" id="evaluation-link" hidden>Avaliar no Google Forms</a>
+        </div>
+        <svg class="evaluation-art" viewBox="0 0 194 160" fill="none" aria-hidden="true">
+          <circle cx="98" cy="79" r="63" fill="#325C46"/>
+          <rect x="62" y="27" width="78" height="111" rx="9" transform="rotate(8 62 27)" fill="#DDEACA"/>
+          <rect x="78" y="24" width="39" height="16" rx="5" transform="rotate(8 78 24)" fill="#F7CD72"/>
+          <path d="m75 60 4 5 8-8m-15 23 4 6 8-8m-15 24 4 5 8-8m18-36 20 3m-23 17 20 3m-23 18 20 3" stroke="#3B684D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M158 41v16m-8-8h16M38 106v16m-8-8h16" stroke="#A5C48E" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#inicio">
+          <img src="imagens/marca.svg" alt="" width="33" height="33">
+          <span>Consumo Consciente</span>
+        </a>
+        <p>Atividade Extensionista IV · Ciência da Computação</p>
+      </div>
+      <p><strong>ODS 12.8</strong> · Informação e conscientização para hábitos de consumo mais sustentáveis.</p>
+    </div>
+  </footer>
+</body>
+</html>
